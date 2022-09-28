@@ -41,6 +41,8 @@ export const getArnieQuotes = async (urls: string[]): Promise<TResult[]> => {
 /* return new Promise(async (resolve, reject) => {
     const results: TResult[] = [];
 
+    const numUrls = urls.length;
+    
     while (numUrls--) {
       const response = (await httpGet(urls[i])) as GetResponse;
 
